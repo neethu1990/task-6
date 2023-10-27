@@ -4,6 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "dev": "nodemon server"
   },
   "author": "",
@@ -17,5 +19,8 @@
     "mongodb": "^6.2.0",
     "mongoose": "^7.6.2",
     "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
